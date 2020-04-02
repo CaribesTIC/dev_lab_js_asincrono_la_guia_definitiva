@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Promesas</h2>
+
+<p>In this example we demonstrate a simple JavaScript Promesas.</p>
+
+
+<script>
+const delay = time => new Promise(resolveCallback => setTimeout(resolveCallback, time));
+
+(async function wait() {
+  const d1 = delay(500);
+  const d2 = delay(500);
+  await d1;
+  await d2;
+  console.log("Ha transcurrido, como mínimo, 500ms.");
+})();
+</script>
+
+</body>
+</html>
+

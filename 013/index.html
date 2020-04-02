@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Promesas</h2>
+
+<p>In this example we demonstrate a simple JavaScript Promesas.</p>
+
+
+<script>
+const checkServerWithSugar = async (url) => {
+  const response = await fetch(url);
+  return `Estado del Servidor: ${response.status === 200 ? "OK" : "NOT OK"}`;
+}
+
+checkServerWithSugar(document.URL.toString())
+  .then(result => console.log(result))
+  .catch(e => console.log(`Error Capturado Fuera de la función async: ${e}`));
+</script>
+
+</body>
+</html>
+

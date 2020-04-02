@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Promesas</h2>
+
+<p>In this example we demonstrate a simple JavaScript Promesas.</p>
+
+
+<script>
+const p1 = fetch("URL1_Aqui");
+const p2 = fetch("URL2_Aqui");
+const p3 = fetch("URL3_Aqui");
+
+Promise.all([p1, p2, p3])
+  .then(resultArray => console.log(resultArray))
+  .catch(e => console.log(`Error capturado:  ${e}`));
+</script>
+
+</body>
+</html>
+

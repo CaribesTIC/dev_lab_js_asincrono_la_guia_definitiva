@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Promesas</h2>
+
+<p>In this example we demonstrate a simple JavaScript Promesas.</p>
+
+
+<script>
+fetch(document.URL.toString())
+  .then(result => {
+    console.log(result);
+    return "Primer Then";
+  },
+    e => console.log(`Error capturado:  ${e}`))
+  .then(result => console.log(`Segundo Then despues de ${result}: La página ya ha debido ser mostrada`),
+    e => console.log(`Error capturado:  ${e}`));
+</script>
+
+</body>
+</html>
+

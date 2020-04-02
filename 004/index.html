@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Promesas</h2>
+
+<p>In this example we demonstrate a simple JavaScript Promesas.</p>
+
+
+<script>
+fetch(document.URL.toString())
+  .then(result => console.log(result))
+  .then(() => console.log(`Fetch completado, página mostrada`))
+  .catch(e => console.log(`Error capturado:  ${e}`));
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Promesas</h2>
+
+<p>In this example we demonstrate a simple JavaScript Promesas.</p>
+
+
+<script>
+function* countThree() { 
+  yield 1;
+  yield 2;
+  yield 3;
+}
+
+const generator = countThree();
+console.log(generator.next()); // {value: 1, done: false}
+console.log(generator.next()); // {value: 2, done: false}
+console.log(generator.next()); // {value: 3, done: false}
+console.log(generator.next()); // {value: undefined, done: true}
+</script>
+
+</body>
+</html>
+
